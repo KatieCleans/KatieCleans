@@ -3,142 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katie Cleans - Stress-Free Turnover Cleaning</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <title>Katie Cleans | Turnover & Move-Out Cleaning in Portage, MI</title>
+    <meta name="description" content="Katie Cleans provides stress-free turnover cleaning, painting, and maintenance for property managers in Portage & West Michigan. Get an instant quote.">
+    <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE_HERE"> <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-
-    <header>
-        <div class="container">
-            <div class="logo">Katie Cleans</div>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="services.html">Services Checklist</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<body class="bg-gray-50 font-sans">
+    
+    <custom-header></custom-header>
 
     <main>
-        <section class="hero">
-            <div class="container">
-                <h1>Stress-Free Turnover Cleaning</h1>
-                <p class="subtitle">Reliable, rent-ready cleaning for Michigan property managers.</p>
-                <a href="#quote-tool" class="cta-button">Get an Instant Quote</a>
+        <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Stress-Free Turnover Cleaning</h1>
+                <p class="text-xl mb-8">Professional cleaning, painting, and maintenance for Michigan property managers</p>
+                <a href="#quote" class="bg-teal-400 hover:bg-teal-300 text-blue-900 font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300 inline-block">Get Instant Quote</a>
             </div>
         </section>
 
-        <section class="trust-bar">
-            <div class="container">
-                <span>✓ Fully Insured</span>
-                <span>✓ 5-Star Rating</span>
-                <span>✓ Trusted by Michigan Landlords</span>
+        <section class="bg-blue-900 text-white py-6">
+            <div class="container mx-auto px-4 flex flex-wrap justify-center md:justify-between items-center gap-4">
+                <div class="flex items-center gap-2">
+                    <i data-feather="shield" class="w-5 h-5"></i>
+                    <span>Fully Insured</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i data-feather="star" class="w-5 h-5"></i>
+                    <span>5-Star Rated</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i data-feather="home" class="w-5 h-5"></i>
+                    <span>Serving West Michigan</span>
+                </div>
             </div>
         </section>
 
-        <section id="quote-tool" class="container">
-            <h2>Get Your Transparent, Flat-Rate Quote in 60 Seconds</h2>
-            <div class="quote-wrapper">
-                <form id="booking-form">
-                    <div class="form-group">
-                        <label for="apartment-size">1. Select Apartment Size</label>
-                        <select id="apartment-size" name="apartment-size">
-                            <option value="studio">Studio ($150)</option>
-                            <option value="1bed">1 Bed / 1 Bath ($200)</option>
-                            <option value="2bed">2 Bed / 2 Bath ($260)</option>
-                            <option value="3bed">3 Bed / 2 Bath ($320)</option>
-                        </select>
+        <section id="quote" class="py-16 container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Get Your Custom Cleaning Quote</h2>
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden max-w-4xl mx-auto">
+                <div class="md:flex">
+                    <div class="p-8 md:w-2/3">
+                        <form id="quote-form" class="space-y-6">
+                            <div>
+                                <label class="block text-blue-900 font-medium mb-2">Property Size</label>
+                                <select class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-400 focus:border-teal-400">
+                                    <option value="studio">Studio ($150)</option>
+                                    <option value="1bed">1 Bed / 1 Bath ($200)</option>
+                                    <option value="2bed">2 Bed / 2 Bath ($260)</option>
+                                    <option value="3bed">3 Bed / 2 Bath ($320)</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-blue-900 font-medium mb-2">Cleaning Add-Ons</label>
+                                <div class="space-y-3">
+                                    <label class="flex items-center space-x-3">
+                                        <input type="checkbox" name="oven" class="rounded text-teal-500 focus:ring-teal-400 h-5 w-5">
+                                        <span>Inside Oven (+$30)</span>
+                                    </label>
+                                    <label class="flex items-center space-x-3">
+                                        <input type="checkbox" name="fridge" class="rounded text-teal-500 focus:ring-teal-400 h-5 w-5">
+                                        <span>Inside Fridge (+$30)</span>
+                                    </label>
+                                    <label class="flex items-center space-x-3">
+                                        <input type="checkbox" name="windows" class="rounded text-teal-500 focus:ring-teal-400 h-5 w-5">
+                                        <span>Interior Windows (+$50)</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
                     </div>
+                    
+                    <div class="bg-blue-50 p-8 md:w-1/3 flex flex-col justify-center">
+                        <div class="text-center">
+                            <h3 class="text-lg font-medium text-blue-900 mb-2">Cleaning Total</h3>
+                            <div class="text-4xl font-bold text-teal-600 mb-6">$150.00</div>
+                            <button class="w-full bg-teal-400 hover:bg-teal-300 text-blue-900 font-bold py-3 px-4 rounded-lg shadow transition duration-300">
+                                Book Now
+                            </button>
+                            <p class="text-sm text-gray-500 mt-3">25% deposit required</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="form-group">
-                        <fieldset>
-                            <legend>2. Choose Your Add-Ons</legend>
-                            <label>
-                                <input type="checkbox" name="addon" value="oven">
-                                Inside Oven (+$30)
-                            </label>
-                            <label>
-                                <input type="checkbox" name="addon" value="fridge">
-                                Inside Fridge (+$30)
-                            </label>
-                            <label>
-                                <input type="checkbox" name="addon" value="windows">
-                                Interior Windows (+$50)
-                            </label>
-                        </fieldset>
+        <section class="bg-gray-100 py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">How It Works</h2>
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-feather="edit" class="text-blue-700 w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-blue-900">Get Quote</h3>
+                        <p class="text-gray-600">Use our instant tool or form</p>
                     </div>
-                </form>
+                    <div class="text-center">
+                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-feather="calendar" class="text-blue-700 w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-blue-900">Schedule</h3>
+                        <p class="text-gray-600">Pick your preferred date</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-feather="check-circle" class="text-blue-700 w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-blue-900">We Work</h3>
+                        <p class="text-gray-600">Professional & efficient service</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-feather="home" class="text-blue-700 w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-blue-900">Move-In Ready</h3>
+                        <p class="text-gray-600">Spotless property for tenants</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-16 container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                    <i data-feather="check-circle" class="w-12 h-12 text-teal-500 mx-auto mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-900">Turnover Cleaning</h3>
+                    <p class="text-gray-600 mb-4">A complete top-to-bottom clean for rent-ready properties. Get an instant quote above!</p>
+                    <p class="text-xl font-bold text-blue-800">Flat-Rate Pricing</p>
+                </div>
                 
-                <div class="quote-total">
-                    <h3>Your Total:</h3>
-                    <div id="total-price" class="total-price-display">$150.00</div>
-                    <a href="#contact" class="cta-button">Book This Clean</a>
-                    <small>A 25% deposit is required to secure your date.</small>
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                    <i data-feather="pen-tool" class="w-12 h-12 text-teal-500 mx-auto mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-900">Minor Painting</h3>
+                    <p class="text-gray-600 mb-4">Perfect for touch-ups, single rooms, or refreshing trim. We handle the prep, painting, and cleanup.</p>
+                    <p class="text-xl font-bold text-blue-800">Priced by Project</p>
                 </div>
-            </div>
-        </section>
-
-        <section id="how-it-works" class="container">
-            <h2>How It Works</h2>
-            <div class="steps">
-                <div class="step">
-                    <h3>1. Get a Quote</h3>
-                    <p>Use our instant quote tool to build your service package.</p>
-                </div>
-                <div class="step">
-                    <h3>2. Schedule</h3>
-                    <p>Pick a time that works perfectly for your turnover schedule.</p>
-                </div>
-                <div class="step">
-                    <h3>3. Get Ready</h3>
-                    <p>We arrive on time and handle the entire deep clean checklist.</p>
-                </div>
-                <div class="step">
-                    <h3>4. Move-In Ready</h3>
-                    <p>Your unit is sparkling, spotless, and ready for its new tenant.</p>
-                </div>
-            </div>
-        </section>
         
-        <section id="gallery" class="container">
-            <h2>Before & After Gallery</h2>
-            <p><em>[A gallery of before/after photos will go here. This can be managed by the CMS.]</em></p>
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                    <i data-feather="tool" class="w-12 h-12 text-teal-500 mx-auto mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-900">Minor Maintenance</h3>
+                    <p class="text-gray-600 mb-4">Fixing leaky faucets, replacing light fixtures, patching small drywall holes, and other handy-work.</p>
+                    <p class="text-xl font-bold text-blue-800">$75 / Hour + Materials</p>
+                </div>
+            </div>
         </section>
 
-        <section id="contact" class="container">
-            <h2>Get in Touch</h2>
-            <p>For custom quotes or to discuss B2B contracts, send us a message.</p>
-            
-            <form id="contact-form" name="contact" data-netlify="true">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+        <section id="gallery" class="py-16 container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Before & After</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="http://static.photos/cleaning/640x360/1" alt="Clean kitchen" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-blue-900">Kitchen Deep Clean</h3>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="http://static.photos/cleaning/640x360/2" alt="Clean bathroom" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-blue-900">Bathroom Refresh</h3>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="http://static.photos/cleaning/640x360/3" alt="Clean living room" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-blue-900">Living Area</h3>
+                    </div>
                 </div>
-                <button type="submit" class="cta-button">Send Message</button>
-            </form>
+            </div>
         </section>
 
+        <section id="contact" class="bg-gray-100 py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-2xl mx-auto">
+                    <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Request a Quote or Consultation</h2>
+                    <form 
+                        name="contact" 
+                        method="POST" 
+                        data-netlify="true" 
+                        class="bg-white p-8 rounded-xl shadow-lg space-y-6"
+                    >
+                        <input type="hidden" name="form-name" value="contact" />
+                        
+                        <div>
+                            <label for="service-type" class="block text-blue-900 font-medium mb-2">I'm interested in...</label>
+                            <select id="service-type" name="service" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-400 focus:border-teal-400">
+                                <option>Turnover Cleaning</option>
+                                <option>Minor Painting</option>
+                                <option>Minor Maintenance</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="name" class="block text-blue-900 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-400 focus:border-teal-400">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-blue-900 font-medium mb-2">Your Email</label>
+                            <input type="email" id="email" name="email" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-400 focus:border-teal-400">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-blue-900 font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your property or project..." class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-400 focus:border-teal-400"></textarea>
+                        </div>
+                        
+                        <div>
+                            <button type="submit" class="w-full bg-teal-400 hover:bg-teal-300 text-blue-900 font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300">
+                                Send Request
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Katie Cleans | Serving West Michigan</p>
-            <p>Email: katiecleans269@gmail.com</p>
-        </div>
-    </footer>
+    <custom-footer></custom-footer>
 
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
     <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
 </body>
 </html>
