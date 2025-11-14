@@ -1,10 +1,280 @@
-/* --- Enhanced Contact Form Styles --- */
-#contact-form {
-    max-width: 600px;
-    margin: 30px auto 0 auto;
+/* --- CSS Variables (Color Palette) --- */
+:root {
+    --navy: #0a2342;
+    --mint: #88d498;
+    --white: #ffffff;
+    --light-gray: #f4f7f6;
+    --text-color: #333;
+    --font-primary: 'Montserrat', sans-serif;
+}
+
+/* --- Global Styles --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--white);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    color: var(--navy);
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; margin-top: 40px; text-align: center; }
+h3 { font-size: 1.4rem; }
+p { margin-bottom: 15px; }
+
+/* --- Header & Navigation --- */
+header {
+    background: var(--white);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--navy);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--navy);
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: var(--mint);
+}
+
+/* --- Call-to-Action Button --- */
+.cta-button {
+    display: inline-block;
+    background: var(--mint);
+    color: var(--navy);
+    font-weight: 700;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background: #70c483;
+    transform: translateY(-2px);
+}
+
+/* --- Hero Section --- */
+.hero {
+    background: var(--light-gray);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    margin-bottom: 10px;
+}
+
+.hero .subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* --- Trust Bar --- */
+.trust-bar {
+    background: var(--navy);
+    color: var(--white);
+    padding: 20px 0;
+}
+
+.trust-bar .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+}
+
+/* --- Quote Tool Section --- */
+#quote-tool {
+    padding: 60px 20px;
+    background: var(--white);
+}
+
+.quote-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Added for responsiveness */
+    gap: 40px;
+    margin-top: 30px;
+}
+
+#booking-form {
+    flex: 2;
+    min-width: 300px; /* Added for responsiveness */
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--navy);
+}
+
+.form-group select,
+.form-group fieldset {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-family: var(--font-primary);
+}
+
+.form-group fieldset {
+    border: 2px solid #ddd;
+}
+.form-group fieldset legend {
+    font-weight: 600;
+    color: var(--navy);
+    padding: 0 10px;
+}
+.form-group fieldset label {
+    font-weight: 400;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    display: block;
+}
+.form-group fieldset input {
+    margin-right: 10px;
+}
+
+.quote-total {
+    flex: 1;
     background: var(--light-gray);
     padding: 30px;
     border-radius: 8px;
+    text-align: center;
+    height: fit-content;
+    min-width: 300px; /* Added for responsiveness */
+}
+
+.total-price-display {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 20px;
+}
+
+.quote-total .cta-button {
+    width: 100%;
+}
+.quote-total small {
+    display: block;
+    margin-top: 15px;
+    color: #777;
+}
+
+/* --- How It Works Section --- */
+#how-it-works {
+    padding: 60px 20px;
+    background: var(--light-gray);
+}
+.steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap; /* Added for responsiveness */
+}
+.step {
+    flex: 1;
+    text-align: center;
+    min-width: 250px; /* Added for responsiveness */
+}
+.step h3 {
+    color: var(--navy);
+}
+
+/* --- Services Page Specific --- */
+.page-title {
+    background: var(--light-gray);
+    padding: 40px 0;
+    text-align: center;
+}
+.checklist-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 20px;
+    flex-wrap: wrap; /* Added for responsiveness */
+}
+.checklist-column {
+    flex: 1;
+    min-width: 300px; /* Added for responsiveness */
+}
+.checklist-column ul {
+    list-style: none;
+    margin-left: 0;
+}
+.checklist-column li {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 12px;
+}
+.checklist-column li::before {
+    content: '✓';
+    color: var(--mint);
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* --- Enhanced Contact Form Styles --- */
+#contact-form {
+    max-width: 700px;
+    margin: 30px auto 0 auto;
 }
 
 #contact-form .form-group {
@@ -27,10 +297,24 @@
     border: 2px solid #ddd;
     border-radius: 5px;
     font-family: var(--font-primary);
+    background: #fff;
 }
 
 #contact-form button {
     width: 100%;
     border: none;
     cursor: pointer;
+}
+
+/* --- Footer --- */
+footer {
+    background: var(--navy);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 5px;
 }
