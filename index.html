@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katie Cleans - Professional Turnover Cleaning</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">Katie Cleans</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Services Checklist</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Professional & Efficient Turnover Cleaning</h1>
+                <p class="subtitle">Move-in ready apartments for Michigan property managers. Guaranteed.</p>
+                <a href="#quote-tool" class="cta-button">Get an Instant Quote</a>
+            </div>
+        </section>
+
+        <section class="trust-bar">
+            <div class="container">
+                <span>✓ Fully Insured</span>
+                <span>✓ 5-Star Google Rating</span>
+                <span>✓ Trusted by Michigan Landlords</span>
+            </div>
+        </section>
+
+        <section id="quote-tool" class="container">
+            <h2>Get Your Transparent, Flat-Rate Quote in 60 Seconds</h2>
+            <div class="quote-wrapper">
+                <form id="booking-form">
+                    <div class="form-group">
+                        <label for="apartment-size">1. Select Apartment Size</label>
+                        <select id="apartment-size" name="apartment-size">
+                            <option value="studio">Studio ($150)</option>
+                            <option value="1bed">1 Bed / 1 Bath ($200)</option>
+                            <option value="2bed">2 Bed / 2 Bath ($260)</option>
+                            <option value="3bed">3 Bed / 2 Bath ($320)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <fieldset>
+                            <legend>2. Choose Your Add-Ons</legend>
+                            <label>
+                                <input type="checkbox" name="addon" value="oven">
+                                Inside Oven (+$30)
+                            </label>
+                            <label>
+                                <input type="checkbox" name="addon" value="fridge">
+                                Inside Fridge (+$30)
+                            </label>
+                            <label>
+                                <input type="checkbox" name="addon" value="windows">
+                                Interior Windows (+$50)
+                            </label>
+                        </fieldset>
+                    </div>
+                </form>
+                
+                <div class="quote-total">
+                    <h3>Your Total:</h3>
+                    <div id="total-price" class="total-price-display">$150.00</div>
+                    <a href="#contact" class="cta-button">Book This Clean</a>
+                    <small>A 25% deposit is required to secure your date.</small>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>1. Get a Quote</h3>
+                    <p>Use our instant quote tool to build your service package.</p>
+                </div>
+                <div class="step">
+                    <h3>2. Schedule</h3>
+                    <p>Pick a time that works perfectly for your turnover schedule.</p>
+                </div>
+                <div class="step">
+                    <h3>3. Get Ready</h3>
+                    <p>We arrive on time and handle the entire deep clean checklist.</p>
+                </div>
+                <div class="step">
+                    <h3>4. Move-In Ready</h3>
+                    <p>Your unit is sparkling, spotless, and ready for its new tenant.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="gallery" class="container">
+            <h2>Before & After Gallery</h2>
+            <p><em>[Gallery images would go here]</em></p>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contact Us</h2>
+            <p>For custom quotes or to discuss B2B contracts for multiple units, please get in touch.</p>
+            <p><strong>Email:</strong> katie@katiecleans.mi</p>
+            <p><strong>Phone:</strong> (555) 123-4567</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Katie Cleans | Serving all of West Michigan</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
