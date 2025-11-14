@@ -35,10 +35,7 @@ class CustomFooter extends HTMLElement {
                                     <i data-feather="mail" class="w-5 h-5 mr-2"></i>
                                     <a href="mailto:katiecleans269@gmail.com" class="hover:text-teal-300 transition">katiecleans269@gmail.com</a>
                                 </li>
-                                <li class="flex items-center">
-                                    <i data-feather="phone" class="w-5 h-5 mr-2"></i>
-                                    <a href="tel:+15551234567" class="hover:text-teal-300 transition">(555) 123-4567</a>
-                                </li>
+                                
                                 <li class="flex items-center">
                                     <i data-feather="map-pin" class="w-5 h-5 mr-2"></i>
                                     <span>Portage, MI</span>
