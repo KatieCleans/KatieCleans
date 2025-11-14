@@ -4,38 +4,27 @@ document.addEventListener('DOMContentLoaded', function() {
     const quoteForm = document.getElementById('quote-form');
     if (quoteForm) {
         const propertySize = quoteForm.querySelector('select');
-        const addOns = quoteForm.querySelectorAll('input[type="checkbox"]');
+        // Add-on checkboxes are no longer needed
+        // const addOns = quoteForm.querySelectorAll('input[type="checkbox"]');
         const totalDisplay = document.querySelector('#quote .text-4xl');
 
+        // Prices INCREASED to be all-inclusive
         const basePrices = {
-            'studio': 150,
-            '1bed': 200,
-            '2bed': 260,
-            '3bed': 320
+            'studio': 200,
+            '1bed': 250,
+            '2bed': 320,
+            '3bed': 390
         };
 
-        // This now matches the 'name' attribute from the HTML
-        const addOnPrices = {
-            'oven': 30,
-            'fridge': 30,
-            'windows': 50
-        };
+        // Add-on prices are no longer needed
+        // const addOnPrices = { ... };
 
         function calculateTotal() {
             // 1. Get base price
             let total = basePrices[propertySize.value];
             
-            // 2. Add add-ons
-            addOns.forEach(addOn => {
-                // Check if the checkbox is checked and has a name
-                if (addOn.checked && addOn.name) {
-                    // Use the name (e.g., 'oven') as the key
-                    if (addOnPrices[addOn.name]) {
-                        total += addOnPrices[addOn.name];
-                    }
-                }
-            });
-
+            // 2. Add-on logic is REMOVED
+            
             // 3. Update the display
             totalDisplay.textContent = `$${total.toFixed(2)}`;
             totalDisplay.classList.add('animate-pop');
@@ -43,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         propertySize.addEventListener('change', calculateTotal);
-        addOns.forEach(addOn => addOn.addEventListener('change', calculateTotal));
+        // Event listener for add-ons is REMOVED
 
         // Initialize calculator
         calculateTotal();
@@ -75,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Close mobile menu when a link is clicked
     if (mobileMenu) {
         mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', ()F => {
+            link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
             });
         });
