@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katie Cleans - Professional Turnover Cleaning</title>
+    <title>Katie Cleans - Stress-Free Turnover Cleaning</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -26,8 +26,8 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1>Professional & Efficient Turnover Cleaning</h1>
-                <p class="subtitle">Move-in ready apartments for Michigan property managers. Guaranteed.</p>
+                <h1>Stress-Free Turnover Cleaning</h1>
+                <p class="subtitle">Reliable, rent-ready cleaning for Michigan property managers.</p>
                 <a href="#quote-tool" class="cta-button">Get an Instant Quote</a>
             </div>
         </section>
@@ -35,7 +35,7 @@
         <section class="trust-bar">
             <div class="container">
                 <span>✓ Fully Insured</span>
-                <span>✓ 5-Star Google Rating</span>
+                <span>✓ 5-Star Rating</span>
                 <span>✓ Trusted by Michigan Landlords</span>
             </div>
         </section>
@@ -106,21 +106,36 @@
         
         <section id="gallery" class="container">
             <h2>Before & After Gallery</h2>
-            <p><em>[Gallery images would go here]</em></p>
+            <p><em>[A gallery of before/after photos will go here. This can be managed by the CMS.]</em></p>
         </section>
 
         <section id="contact" class="container">
-            <h2>Contact Us</h2>
-            <p>For custom quotes or to discuss B2B contracts for multiple units, please get in touch.</p>
-            <p><strong>Email:</strong> katie@katiecleans.mi</p>
-            <p><strong>Phone:</strong> (555) 123-4567</p>
+            <h2>Get in Touch</h2>
+            <p>For custom quotes or to discuss B2B contracts, send us a message.</p>
+            
+            <form id="contact-form" name="contact" data-netlify="true">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
         </section>
 
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Katie Cleans | Serving all of West Michigan</p>
+            <p>&copy; 2025 Katie Cleans | Serving West Michigan</p>
+            <p>Email: katiecleans269@gmail.com</p>
         </div>
     </footer>
 
