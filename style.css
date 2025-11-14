@@ -1,0 +1,36 @@
+/* --- Enhanced Contact Form Styles --- */
+#contact-form {
+    max-width: 600px;
+    margin: 30px auto 0 auto;
+    background: var(--light-gray);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+#contact-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--navy);
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-family: var(--font-primary);
+}
+
+#contact-form button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
